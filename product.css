@@ -1,0 +1,327 @@
+/* ==========================================================================
+   PRODUCT DETAILS PAGE STYLES (Legendary Dark Theme)
+   ========================================================================== */
+
+.product-page {
+  background-color: #fcfcfc;
+}
+
+.legendary-bg {
+  background-color: #f5f3ef; /* Light background behind the dark card */
+  padding-bottom: 60px;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+  padding: 20px 16px;
+  font-size: 13px;
+  color: #888;
+}
+
+.breadcrumbs a {
+  color: #555;
+  text-decoration: none;
+}
+.breadcrumbs .divider {
+  margin: 0 8px;
+}
+.breadcrumbs .current {
+  color: #111;
+  font-weight: 600;
+}
+
+/* Legendary Card Container */
+.product-details-section {
+  padding: 0 16px;
+}
+
+.product-legendary-card {
+  background-color: #161618; /* Dark premium background */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top: Hero Area */
+.product-hero-area {
+  position: relative;
+  background: linear-gradient(180deg, #1e1e21 0%, #161618 100%);
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 240px;
+  border-bottom: 1px solid #2a2a2c;
+}
+
+/* Guarantee Badge */
+.hero-badge-guarantee {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #f59e0b; /* Yellow/Gold */
+  color: #000;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 6px 12px;
+  border-radius: 50px;
+  z-index: 2;
+}
+
+/* Center Icon (YouTube) */
+.product-icon-center {
+  filter: drop-shadow(0 10px 25px rgba(229, 9, 20, 0.4));
+  animation: floatIcon 3s ease-in-out infinite;
+}
+
+@keyframes floatIcon {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Device Icons Stack (Left side) */
+.device-icons-vertical {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.device-icons-vertical .d-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  backdrop-filter: blur(5px);
+}
+
+/* Bottom: Info Area */
+.product-info-area {
+  padding: 24px 20px;
+  color: #ffffff;
+}
+
+/* Tags */
+.info-tags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.info-tags .tag-dark {
+  background: #2a2a2c;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 50px;
+  border: 1px solid #3f3f42;
+}
+
+.info-tags .tag-white {
+  background: #ffffff;
+  color: #000;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 50px;
+}
+
+/* Title & Desc */
+.page-title {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.page-desc {
+  font-size: 14px;
+  color: #aaa;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Rating Stats */
+.page-rating-stats {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 24px;
+}
+
+.rating-stars {
+  color: #f59e0b;
+  letter-spacing: 2px;
+}
+
+.rating-score {
+  color: #fff;
+  font-weight: 700;
+}
+
+.stats-separator {
+  color: #555;
+}
+
+.purchase-count strong {
+  color: #fff;
+}
+
+/* PRICING VARIANTS GRID */
+.pricing-variants {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.variant-box {
+  flex: 1;
+  position: relative;
+  background: #1e1e21;
+  border: 1.5px solid #3f3f42;
+  border-radius: 12px;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.variant-input {
+  display: none;
+}
+
+/* Active State */
+.variant-box.active {
+  border-color: #e50914; /* Red accent */
+  background: rgba(229, 9, 20, 0.05);
+}
+
+.variant-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.variant-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.variant-badge {
+  background: #10a37f;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 20px;
+}
+
+.variant-price {
+  margin-bottom: 6px;
+}
+
+.variant-price .amount {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.variant-price .amount.highlight {
+  color: #e50914;
+}
+
+.variant-note {
+  font-size: 11px;
+  color: #888;
+}
+
+/* Bottom Actions */
+.product-actions-fixed {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.product-actions-fixed .btn {
+  flex: 1;
+  height: 54px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.product-actions-fixed .btn-add {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #3f3f42;
+}
+
+.product-actions-fixed .btn-add:hover {
+  background: #2a2a2c;
+  border-color: #555;
+}
+
+.product-actions-fixed .btn-buy {
+  background: #e50914;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(229, 9, 20, 0.3);
+}
+
+.product-actions-fixed .btn-buy:hover {
+  background: #f6121d;
+  box-shadow: 0 12px 25px rgba(229, 9, 20, 0.4);
+}
+
+/* Trust Footer */
+.product-trust-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid #2a2a2c;
+  padding-top: 16px;
+  margin-top: auto;
+}
+
+.trust-pill {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 50px;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.trust-text {
+  font-size: 11px;
+  color: #888;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .pricing-variants {
+    flex-direction: column;
+  }
+}
